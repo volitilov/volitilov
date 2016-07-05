@@ -2,30 +2,60 @@
 	<footer class="col-xs-12" id="contacts">
 		<% include ./../components/_menu-contacts %>
 		<div class="col-xs-12 footer-body">
-			<form method="POST">
-				<fieldset>
-					<group>
+			<div class="col-md-2 site-map-1">
+				<ul>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Programs</a></li>
+					<li><a href="#">Templates</a></li>
+					<li><a href="#">Components</a></li>
+					<li><a href="#">Courses</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Info</a></li>
+					<li><a href="#">Contacts</a></li>
+				</ul>
+			</div>
+			<div class="col-md-8 footer-form">
+				<form method="POST">
+					<fieldset>
+						<group>
+							<label>
+								<input class="alert" type="text" name="name" placeholder="name *" requred />
+								<legend>name</legend>
+							</label>
+							<label>
+								<input class="alert" type="text" name="email" placeholder="@ email address *" requred />
+								<legend>email</legend>
+							</label>
+						</group>
+					</fieldset>
+					<fieldset>
 						<label>
-							<input class="alert" type="text" name="name" placeholder="name *" requred />
-							<legend>name</legend>
+							<textarea class="alert" name="text" placeholder="text heare..." requred ></textarea>
 						</label>
+					</fieldset>
+					<fieldset>
 						<label>
-							<input class="alert" type="text" name="email" placeholder="@ email address *" requred />
-							<legend>email</legend>
+							<button type="submit">submit</button>
 						</label>
-					</group>
-				</fieldset>
-				<fieldset>
-					<label>
-						<textarea class="alert" name="text" rows="4" placeholder="text heare..." requred ></textarea>
-					</label>
-				</fieldset>
-				<fieldset>
-					<label>
-						<button type="submit">submit</button>
-					</label>
-				</fieldset>
-			</form>
+					</fieldset>
+				</form>
+			</div>
+			<div class="col-md-2 site-map-2">
+				<ul>
+					<li><a href="#">Philosophy</a></li>
+					<li><a href="#">Partnership</a></li>
+					<li><a href="#">Sign up</a></li>
+					<li><a href="#">Reclame</a></li>
+					<li><a href="#">Statistics</a></li>
+					<li><a href="#">Add content</a></li>
+					<li><a href="#">Job</a></li>
+					<li><a href="#">For investors</a></li>
+					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="#">Privacy policy</a></li>
+				</ul>
+			</div>
 		</div>
 		<div class="col-xs-12 bottom-text">
 			<p>© 2016  All rights reserved. Design and development by <a href="#">volitilov</a></p>
