@@ -1,9 +1,8 @@
 ///////////////////////////////////////	default mobile devices
 .home-item-1 {
-	padding-top: 40px;
-	padding-bottom: 100px;
-	padding-left: 30px;
-	padding-right: 30px;
+	.item-large {
+		padding-top: 100px;
+	}
 	h4 {
 		color: rgb(2, 168, 243);
 		text-transform: uppercase;
@@ -11,65 +10,46 @@
 	p {
 		font-size: 12px;
 	}
-	.big-logo-sites {
-		padding-top: 20px;
-		.main-images {
-			img {
-				width: 100%;
-			}
+	.main-images {
+		margin-bottom: 50px;
+		img {
+			width: 60%;
 		}
 	}
-}
-
-///////////////////////////////////////////////////	tablet devices
-@media  (min-width : 768px)  {
-	.home-item-1 {
-		padding-top: 80px;
-		padding-left: 165px;
-		padding-right: 165px;
-		.big-logo-sites {
-			.main-images {
-				margin-bottom: 50px;
-				img {
-					width: 100%;
-				}
-			}
-			ul {
-				padding: 0px;
-				list-style: none;
-				li {
+	ul {
+		padding: 0px;
+		list-style: none;
+		li {
+			display: inline-block;
+			margin-right: 10px;
+			a {
+				color: white;
+				transition: 0.5s;
+				font-size: 14px;
+				font-weight: bold;
+				background-color: @color-default;
+				border-radius: 4px;
+				-webkit-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+				-moz-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+				box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+				// text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+				padding: 10px 25px;
+				padding-left: 20px;
+				&:after {
+					transition: all 0.3s;
+					color: white;
+					top: -2px;
+					right: -10px;
+					font-size: 9px;
 					display: inline-block;
-					margin-right: 10px;
-					a {
-						color: white;
-						transition: 0.5s;
-						font-size: 14px;
-						font-weight: bold;
-						background-color: @color-default;
-						border-radius: 4px;
-						-webkit-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
-						-moz-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
-						box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
-						// text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-						padding: 10px 25px;
-						padding-left: 20px;
-						&:after {
-							transition: all 0.3s;
-							color: white;
-							top: -2px;
-							right: -10px;
-							font-size: 9px;
-							display: inline-block;
-							position: relative;
-							z-index: 1;
-							content: "❯";
-						}
-						&:hover {
-							box-shadow: none;
-							&:after {
-								right: -15px;
-							}
-						}
+					position: relative;
+					z-index: 1;
+					content: "❯";
+				}
+				&:hover {
+					box-shadow: none;
+					&:after {
+						right: -15px;
 					}
 				}
 			}
@@ -77,12 +57,14 @@
 	}
 }
 
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	
+}
+
 ///////////////////////////////////////////////////	laptop devices
 @media  (min-width : 996px) {
-	.home-item-1 {
-		padding-top: 100px;
-		padding-bottom: 130px;
-	}
+	
 }
 
 ///////////////////////////////////////////////////	dekstop devices

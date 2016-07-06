@@ -24,7 +24,6 @@
 /////////////////////////////////////// 	  default mobile devices
 .block {
 	z-index: 7 !important;
-	padding: 0px;
 	background-color: rgb(2, 168, 243);
 }
 ///////////////////////////////////////////////////	tablet devices
@@ -70,19 +69,11 @@
 ///////////////////////////////////////							card
 /////////////////////////////////////// 	  default mobile devices
 .card {
-	transition: all 1s;
-	width: 98%;
-	left: 50%;
-	margin-left: -49%;
-	margin-top: 25px;
-	margin-bottom: 3%;
-	// background-color: #fff;
-	background: #eaeaea url("./../../images/bg.png") repeat;
-	-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
-	box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
-	border-radius: 6px;
-	padding: 30px;
+	padding: 0px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 79%;
+	margin-left: 10.5%;
 }
 ///////////////////////////////////////////////////	tablet devices
 @media  (min-width : 768px)  {
@@ -91,10 +82,33 @@
 
 ///////////////////////////////////////////////////	laptop and dekstop devices
 @media  (min-width : 981px) {
-	.card {
-		width: 73%;
-		margin-left: -36.5%;
+	
+}
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////						   cards
+/////////////////////////////////////// 	  default mobile devices
+.cards {
+	.card;
+	padding-bottom: 10px;
+	ul {
+		padding: 0px;
+		list-style: none;
+		margin-top: -10px;
+		li {
+			padding: 10px;
+			display: inline-block;
+		}
 	}
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	
+}
+
+///////////////////////////////////////////////////	laptop and dekstop devices
+@media  (min-width : 981px) {
+	
 }
 
 ////////////////////////////////////////////////////////////////////
@@ -179,9 +193,9 @@
 
 
 ////////////////////////////////////////////////////////////////////
-///////////////////////////////////////						item-sm
+///////////////////////////////////////					  item-small
 /////////////////////////////////////// 	  default mobile devices
-.item-sm {
+.item-small {
 	transition: all 0.2s;
 	padding: 0px;
 	width: 314px;
@@ -239,12 +253,12 @@
 }
 
 ////////////////////////////////////////////////////////////////////
-///////////////////////////////////////						item-md
+///////////////////////////////////////					 item-medium
 /////////////////////////////////////// 	  default mobile devices
-.item-md {
+.item-medium {
 	transition: all 0.2s;
 	padding: 0px;
-	width: 480px;
+	width: 482px;
 	height: 320px; 
 	border-radius: 4px;
 	background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNjYwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA2NjAgNDAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2NjAgNDAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSI2NjAiIGhlaWdodD0iNDAwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0yNTguMTg0LDE0My41djExM2gxNDMuNjMydi0xMTNIMjU4LjE4NHogTTM5MC4yNDQsMjQ0LjI0N0gyNzAuNDM3di04OC40OTRoMTE5LjgwOEwzOTAuMjQ0LDI0NC4yNDcNCgkJTDM5MC4yNDQsMjQ0LjI0N3oiLz4NCgk8cG9seWdvbiBmaWxsPSIjRDhEOEQ4IiBwb2ludHM9IjI3Ni44ODEsMjM0LjcxNyAzMDEuNTcyLDIwOC43NjQgMzEwLjgyNCwyMTIuNzY4IDM0MC4wMTYsMTgxLjY4OCAzNTEuNTA1LDE5NS40MzQgDQoJCTM1Ni42ODksMTkyLjMwMyAzODQuNzQ2LDIzNC43MTcgCSIvPg0KCTxjaXJjbGUgZmlsbD0iI0Q4RDhEOCIgY3g9IjMwNS40MDUiIGN5PSIxNzguMjU3IiByPSIxMC43ODciLz4NCjwvZz4NCjwvc3ZnPg0K");
@@ -286,6 +300,31 @@
 		 	animation-name: bounceIn;
 		}
 	}
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	
+}
+
+///////////////////////////////////////////////////	laptop and dekstop devices
+@media  (min-width : 981px) {
+	
+}
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////					  item-large
+/////////////////////////////////////// 	  default mobile devices
+.item-large {
+	transition: all 0.5s;
+	left: 50%;
+	margin-left: -495px;
+	width: 990px;
+	height: 660px; 
+	border-radius: 4px;
+	background: #eaeaea url("./../../images/bg.png") repeat;
+	-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
 }
 ///////////////////////////////////////////////////	tablet devices
 @media  (min-width : 768px)  {
