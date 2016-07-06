@@ -139,6 +139,22 @@
 		-webkit-animation-name: bounceInLeft;
 		animation-name: bounceInLeft;
 	}
+	&:before {
+		z-index: 9999;
+		content: '';
+		display: inline-block;
+		position: fixed;
+		width: 25px;
+		height: 88px;
+		border-radius: 5px;
+		right: 110px;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation-name: bounceInRight;
+		animation-name: bounceInRight;
+	}
 	.carousel-inner {
 		padding: 0px;
 		width: 100%;
@@ -148,16 +164,20 @@
 	}
 }
 .carousel-control {
+	transition: all 0.5s;
 	position: fixed;
 	width: 50px;
 	height: 50px;
 	padding-top: 12px;
 	border-radius: 50%;
 	background: #eaeaea url("./../../images/bg.png") repeat;
-	-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
-	box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+	box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
 	z-index: 99;
+	&:hover {
+		box-shadow: none;
+	}
 }
 .carousel-control.right {
 	right: 0;
