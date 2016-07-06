@@ -1,7 +1,36 @@
 <section>
 	<% include components/head/_head %>
 	<% include components/_big-menu-1 %>
-	<% include components/_face %>
+	<section>
+		<div class="col-md-12 block home text-center">
+			<div class="col-md-12 Face-slide Slide carousel" data-interval="false">
+				
+				<div class="carousel-inner">
+					<div class="item active">
+						<div class="carousel-caption">
+							<% include components/_home-item-1 %>
+						</div>
+					</div>
+					<div class="item">
+						<div class="carousel-caption">
+							<% include components/_home-item-2 %>
+						</div>
+					</div>
+					<div class="item">
+						<div class="carousel-caption">
+							<% include components/_home-item-3 %>
+						</div>
+					</div>
+				</div>
+				<a class="left carousel-control animated bounceInLeft" href=".Face-slide" role="button" data-slide="prev">
+					<span aria-hidden="true"><img class="animated bounceIn infinite" src="/images/left.svg" /></span>
+				</a>
+				<a class="right carousel-control animated bounceInRight" href=".Face-slide" role="button" data-slide="next">
+					<span aria-hidden="true"><img class="animated bounceIn infinite" src="/images/right.svg" /></span>
+				</a>
+			</div>
+		</div>
+	</section>
 	<% include components/_big-menu-2 %>
 	<% include components/_footer %>
 </section>
