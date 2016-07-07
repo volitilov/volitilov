@@ -1,0 +1,56 @@
+.services {
+	.card {
+		padding-left: 20px;
+		padding-right: 20px;
+		&:before {
+			z-index: 9999;
+			content: '';
+			display: inline-block;
+			position: fixed;
+			width: 25px;
+			height: 88px;
+			border-radius: 5px;
+			top: 204px;
+			right: 110px;
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+			-webkit-animation-name: bounceInRight;
+			animation-name: bounceInRight;
+			background-color: #000;
+		}
+	}
+	.grid-block {
+		text-align: center;
+		padding: 0px;
+		padding-left: 10px;
+		padding-right: 8px;
+		.services-item {
+			background: #eaeaea url("./../../images/bg.png") repeat;
+			-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+			-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+			box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+			margin-bottom: 20px;
+			border-radius: 5px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			ul {
+				padding: 0px;
+				list-style: none;
+				li {
+					padding-top: 3px;
+					padding-bottom: 3px;
+					a {
+						font-size: 13px;
+						color: rgb(2, 168, 243);
+						&:hover {
+							text-decoration: underline !important;
+							color: #000;
+						}
+					}
+				} 
+			}
+		}
+	}
+}
